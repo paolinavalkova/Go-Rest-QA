@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+project.ext {
+    cucumberVersion = '5.0.0-RC1'
+}
+
+dependencies {
+	implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+	implementation 'com.google.code.gson:gson:2.8.6'
+    testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
+}
+
+repositories {
+    mavenCentral()
+}
